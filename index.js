@@ -7,7 +7,7 @@ var io = require('socket.io')(http);
 var userNum = 0;
 
 app.get('/', (req, res) => {
-    res.sendFile('C:/Users/shuan/Desktop/chat-example/index.html');
+    res.sendFile('/usr/local/nginx/html/chatroom/easy-chatroom/index.html');
 });
 
 io.on('connection', socket => {
